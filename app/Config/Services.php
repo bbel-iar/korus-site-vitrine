@@ -3,6 +3,8 @@
 namespace Config;
 
 use CodeIgniter\Config\BaseService;
+use Twig\Environment;
+use Twig\Loader\FilesystemLoader;
 
 /**
  * Services Configuration file.
@@ -29,4 +31,19 @@ class Services extends BaseService
      *     return new \CodeIgniter\Example();
      * }
      */
+
+    public static function twig(bool $getShared = true)
+    {
+        if ($getShared) {
+            return static::getSharedInstance('twig');
+        }
+
+        $loader = new FilesystemLoader(APPPATH . 'Views');
+
+        return new Environment($loader, [
+            'cache' => WRITEPATH . 'cache/twig',
+            'debug' => ENVIRONMENT !== 'production',
+            'autoescape' => 'html',
+        ]);
+    }
 }
