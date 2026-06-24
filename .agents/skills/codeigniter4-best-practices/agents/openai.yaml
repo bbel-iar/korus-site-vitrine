@@ -1,0 +1,4 @@
+interface:
+  display_name: "CodeIgniter 4 Best Practices"
+  short_description: "CI4 architecture, routing, MVC and security"
+  default_prompt: "Use $codeigniter4-best-practices to review or implement a CodeIgniter 4 feature with framework conventions."

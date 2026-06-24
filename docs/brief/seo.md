@@ -31,10 +31,9 @@ La marque doit aussi etre preservee : `Korus Imprimerie`, `Korus`, `Imprimerie A
 | Plateformes Web to print | web to print | Nos plateformes web to print | Web-to-print - Korus Imprimerie |
 | Logistique et stockage | Logistique et stockage | Notre service logistique et stockage | Logistique et stockage - Korus Imprimerie |
 | Studio graphique | Studio graphique bordeaux | Le studio graphique à Bordeaux de Korus Imprimerie | Studio graphique Bordeaux - Korus Imprimerie |
-| PROJETS CLIENTS | Réalisations sur mesure | Réalisations sur mesure | Réalisations sur mesure – Korus Imprimerie |
 | CONTACT/DEVIS | Devis imprimeur Bordeaux | Demander un devis imprimeur Bordeaux | Devis imprimeur Bordeaux – Korus Imprimerie |
 
-Les pages `Projet client 1` a `Projet client 8` sont prevues comme articles avec champs personnalises. Elles doivent etre optimisees individuellement lorsque les noms, visuels et types de production seront fixes.
+Les realisations doivent etre integrees aux pages existantes ou aux contenus de preuve, sans creer de page SEO autonome dediee a une galerie de cas clients.
 
 ## Mots-cles prioritaires
 
@@ -56,7 +55,7 @@ Les requetes principales melangent intention commerciale, locale et informationn
 - La page savoir-faire doit mailler vers offset/numerique, embellissement et grand format.
 - Les pages services doivent mailler entre My EPrint, studio graphique, stockage et expedition.
 - La page RSE doit soutenir les preuves environnementales citees ailleurs, notamment PEFC, Imprim'vert, papiers responsables et encres vegetales.
-- Les projets clients doivent servir de preuves visuelles et renforcer les pages metier par liens internes.
+- Les realisations doivent servir de preuves visuelles et renforcer les pages metier par liens internes, sans generer de section ou de page autonome dans la navigation.
 
 Les metas presentes dans `docs/contenu_texte/` servent d'inspiration pour les balises description. Elles doivent etre reformulees si necessaire, rester courtes et orienter le clic : localisation, expertise, benefice client et preuve.
 
@@ -66,7 +65,11 @@ Chaque page doit avoir un seul H1, proche de celui defini dans l'Excel. Les H2 d
 
 Utiliser les mots-cles de facon naturelle dans les titres, introductions, textes d'ancrage et metas. Ne pas sur-optimiser : le contenu doit d'abord rester utile, clair et credible pour un client professionnel.
 
-Prevoir un maillage interne explicite : home vers pages meres, pages meres vers sous-pages, sous-pages vers projets clients, projets clients vers prestations liees, services entre eux quand le parcours utilisateur le justifie.
+Prevoir un maillage interne explicite : home vers pages meres, pages meres vers sous-pages, pages metiers vers contenus de preuve integres, services entre eux quand le parcours utilisateur le justifie.
+
+## Note de cadrage
+
+La section de navigation `PROJETS CLIENTS` a ete retiree du projet. Ne pas la recreer dans le sitemap, les titles, les H1 ou les maillages. Utiliser a la place des preuves visuelles integrees aux pages pertinentes.
 
 ## Points d'attention
 

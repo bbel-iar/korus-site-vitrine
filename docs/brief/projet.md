@@ -26,7 +26,7 @@ Les messages cles a faire ressortir sont :
 - une imprimerie bordelaise experte depuis 1987 ;
 - une production 100 % francaise ;
 - une maitrise de l'offset, du numerique, de l'embellissement et du grand format ;
-- des services complementaires pour simplifier les projets clients ;
+- des services complementaires pour simplifier les projets et les besoins de communication ;
 - des engagements environnementaux historiques avec Imprim'vert et PEFC.
 
 ## Offres et savoir-faire
@@ -69,15 +69,18 @@ Les contenus sources suggerent les pages principales suivantes :
 - Grand format : signaletique et supports de visibilite.
 - Services : studio graphique, web-to-print, logistique et stockage.
 - RSE : engagements economiques, sociaux et environnementaux.
-- Projets clients : galerie de realisations imprimees.
+
+Les realisations doivent etre integrees aux pages existantes sous forme de preuves visuelles, de cas d'usage ou de vignettes, sans creer une page autonome dediee.
 
 ## Direction graphique issue des maquettes
 
-Les maquettes `HOME.jpg`, `IMPRIMERIE.jpg`, `savoir faires.jpg`, `embelissement.jpg`, `projets clients.jpg` et les pages `projet client` montrent une direction visuelle sobre et premium.
+Les maquettes `HOME.jpg`, `IMPRIMERIE.jpg`, `savoir faires.jpg`, `embelissement.jpg` et les autres visuels exportes montrent une direction visuelle sobre et premium.
 
-L'univers graphique repose sur des heros sombres avec photographies en noir et blanc, une navigation fine, des fonds blancs tres aeres pour les contenus, des compositions editoriales et des accents jaune Korus pour le logo, les reperes et les appels a l'action. Les pages alternent de grandes zones photographiques, des textes courts, des cartes de savoir-faire et des sections de projets.
+L'univers graphique repose sur des heros sombres avec photographies en noir et blanc, une navigation fine, des fonds blancs tres aeres pour les contenus, des compositions editoriales et des accents jaune Korus pour le logo, les reperes et les appels a l'action. Les pages alternent de grandes zones photographiques, des textes courts et des sections de preuve integrees.
 
-Les pages projets mettent en avant les realisations imprimees avec de grands visuels, une galerie, des filtres par type de production et une navigation entre references. L'objectif visuel est de montrer la matiere, les finitions, le papier, la dorure, le vernis et la qualite d'execution.
+Les preuves visuelles doivent mettre en avant les realisations imprimees avec de grands visuels, la matiere, les finitions, le papier, la dorure, le vernis et la qualite d'execution, sans creer de navigation dediee aux cas clients.
+
+Certains ecrans de reference affichent encore l'ancienne mention `PROJETS CLIENTS` dans le menu ou les chemins de navigation. Cette indication est a ignorer pour la construction du site : elle appartient au jeu de maquettes, pas a l'arborescence cible.
 
 ## Consigne pour l'agent
 

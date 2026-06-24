@@ -37,6 +37,13 @@ Sources associées :
 - `docs/images/` : images de référence et assets.
 - `docs/Arbo Korus 2.xlsx` : arborescence et données SEO source.
 
+## Skills locaux
+
+Les skills Codex propres au dépôt sont stockés dans `.agents/skills/`. Utilisez ce dossier comme référence pour les workflows spécialisés du projet.
+
+- `.agents/skills/codeigniter4-best-practices` : bonnes pratiques CodeIgniter 4.
+- `.agents/skills/tailwindcss-development` : règles et conventions Tailwind CSS du projet.
+
 ## Structure du projet et organisation des modules
 
 Il s’agit d’un site vitrine developper avec CodeIgniter 4. Le code de l’application se trouve dans `app/`, avec les contrôleurs dans `app/Controllers`, la configuration dans `app/Config` et les modèles Twig dans `app/Views`. La racine web publique est `public/` ; conservez-y les ressources accessibles par le navigateur et faites pointer les serveurs web locaux vers ce répertoire. Les tests se trouvent dans `tests/`, avec les assistants de test partagés sous `tests/_support`. Les références de conception, les textes et les éléments sources des images sont stockés dans `docs/`. Les fichiers générés à l’exécution doivent être placés dans `writable/` et ne doivent pas être traités comme du code source.

@@ -19,13 +19,11 @@ Ce document sert d'index de navigation pour le site Korus Imprimerie. Il resume 
 | `Plateformes Web to print` | Page service | My EPrint, commandes en ligne, multisites, validation et expedition |
 | `Logistique et stockage` | Page service | Entreposage, expedition et controle des marchandises |
 | `Studio graphique` | Page service | Conseil, execution graphique et controle des fichiers |
-| `PROJETS CLIENTS` | Galerie de preuves | Ensemble des realisations et references client |
-| `Projet client 1` a `Projet client 8` | Pages de cas client | Detail d'une realisation, visuels, contexte et savoir-faire associe |
 | `CONTACT/DEVIS` | Conversion | Demande de devis et prise de contact |
 
 ## Parcours recommande
 
-Le parcours principal part de `HOME`, descend vers `L'IMPRIMERIE` pour la preuve, puis vers `SAVOIR-FAIRE` et `SERVICES` pour l'offre. Les pages metiers approfondissent les attentes par type de production, tandis que `PROJETS CLIENTS` apporte les preuves visuelles. `CONTACT/DEVIS` clot le parcours et doit rester accessible depuis les pages cles.
+Le parcours principal part de `HOME`, descend vers `L'IMPRIMERIE` pour la preuve, puis vers `SAVOIR-FAIRE` et `SERVICES` pour l'offre. Les pages metiers approfondissent les attentes par type de production, tandis que les preuves visuelles doivent rester integrees aux pages concernes sous forme de sections, de vignettes ou de realisations. `CONTACT/DEVIS` clot le parcours et doit rester accessible depuis les pages cles.
 
 ## Organisation des sous-ensembles
 
@@ -45,9 +43,9 @@ Cette famille regroupe les services qui accompagnent la production :
 - `Logistique et stockage` pour l'entreposage et l'expedition ;
 - `Studio graphique` pour l'execution et la conformite des fichiers.
 
-### Projets clients
+### Realisations
 
-`PROJETS CLIENTS` fonctionne comme une vitrine de references. Les pages `Projet client 1` a `Projet client 8` doivent montrer des realisations concretes et renvoyer vers les prestations associees, afin de transformer les exemples en preuves commerciales et SEO.
+Les realisations doivent servir de preuves visuelles integrees aux pages existantes, sans creer de section dediee dans la navigation principale. Elles peuvent illustrer l'accueil, les pages metier ou les services, mais ne constituent pas un ensemble de pages autonome.
 
 ## Renvois utilises par l'agent
 
