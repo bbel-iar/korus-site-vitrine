@@ -11,6 +11,16 @@ Ce document fournit un contexte rapide a l'agent pour comprendre le projet de re
 - `design.md` : reference visuelle et intentions de maquettes.
 - `seo.md` : cibles SEO, H1, titles et maillage.
 
+## Stack UI
+
+Le site repose sur Tailwind CSS pour la base de style et sur Flowbite pour les composants UI et les patterns interactifs reutilisables.
+
+Pour tout travail lie a Flowbite, prendre comme reference locale le skill `.agents/skills/flowbite`.
+
+## Typographie
+
+La charte typographique du site utilise `Playfair Display` pour les titres et `Montserrat` pour le texte courant, la navigation et les boutons. Les fichiers sont stockes dans `public/polices/` et integres comme variable fonts.
+
 ## Contexte entreprise
 
 Korus Imprimerie est une imprimerie traditionnelle francaise situee a Eysines, aux portes de Bordeaux. Creee en 1987, l'entreprise s'est imposee comme un acteur important de l'impression en Nouvelle-Aquitaine. Elle revendique un savoir-faire industriel, une production locale, une forte culture familiale et un accompagnement client personnalise.

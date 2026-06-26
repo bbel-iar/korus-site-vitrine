@@ -1,3 +1,195 @@
 @import "tailwindcss";
+@import "flowbite/src/themes/default";
 @plugin "flowbite/plugin";
 @source "../../node_modules/flowbite";
+
+@font-face {
+    font-family: "Playfair Display";
+    src: url("../polices/Playfair_Display/PlayfairDisplay-VariableFont_wght.ttf") format("truetype");
+    font-style: normal;
+    font-weight: 100 900;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Playfair Display";
+    src: url("../polices/Playfair_Display/PlayfairDisplay-Italic-VariableFont_wght.ttf") format("truetype");
+    font-style: italic;
+    font-weight: 100 900;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Montserrat";
+    src: url("../polices/Montserrat/Montserrat-VariableFont_wght.ttf") format("truetype");
+    font-style: normal;
+    font-weight: 100 900;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Montserrat";
+    src: url("../polices/Montserrat/Montserrat-Italic-VariableFont_wght.ttf") format("truetype");
+    font-style: italic;
+    font-weight: 100 900;
+    font-display: swap;
+}
+
+@theme {
+
+    /* Font families */
+    --font-body: "Montserrat", sans-serif;
+    --font-heading: "Playfair Display", serif;
+    --font-sans: var(--font-body);
+    --font-serif: var(--font-heading);
+    --font-mono: "ui-monospace", "SFMono-Regular", "Menlo", "Monaco", "Consolas", "Liberation Mono", "Courier New", monospace;
+
+    /* Korus source palette */
+    --color-korus-bg: #FFFFFF;
+    --color-korus-text: #5A5A5A;
+    --color-korus-title: #000000;
+    --color-korus-border: #867847;
+    --color-korus-accent: #FCC008;
+    --color-korus-accent-soft: #FFF0B5;
+    --color-korus-accent-softer: #FFF9DB;
+    --color-korus-accent-medium: #F2D15E;
+    --color-korus-success: #2F7D32;
+    --color-korus-success-strong: #1B5E20;
+    --color-korus-success-soft: #E8F5E9;
+    --color-korus-success-medium: #C8E6C9;
+    --color-korus-danger: #C62828;
+    --color-korus-danger-strong: #8E0000;
+    --color-korus-danger-soft: #FFEBEE;
+    --color-korus-danger-medium: #FFCDD2;
+    --color-korus-warning: #8C5A00;
+    --color-korus-warning-strong: #B26A00;
+    --color-korus-warning-soft: #FFF8E1;
+    --color-korus-warning-medium: #FFECB3;
+    --color-korus-disabled: #A3A3A3;
+    --color-korus-purple: #7E57C2;
+    --color-korus-cyan: #0891B2;
+    --color-korus-indigo: #4F46E5;
+    --color-korus-pink: #DB2777;
+    --color-korus-lime: #65A30D;
+    --color-korus-surface-1: #FFFFFF;
+    --color-korus-surface-2: #F5F5F5;
+    --color-korus-surface-3: #E5E5E5;
+    --color-korus-surface-4: #D4D4D4;
+    --color-korus-surface-muted: #BDBDBD;
+    --color-korus-dark: #2C2C2C;
+    --color-korus-dark-soft: #3A3A3A;
+    --color-korus-dark-backdrop: #000000;
+
+    /* Text variables */
+    --text-2xs: 0.625rem;
+    --leading-9: 36px;
+    --leading-8: 32px;
+    --leading-7: 28px;
+    --leading-6: 24px;
+    --leading-5: 20px;
+    --leading-4: 16px;
+    --leading-none: 1;
+    --leading-heading-none: 60px;
+    --tracking-tighter: -0.8px;
+    --tracking-tight: -0.4px;
+
+    /* Text colors */
+    --color-body: var(--color-korus-text);
+    --color-body-subtle: var(--color-korus-text);
+    --color-heading: var(--color-korus-title);
+    --color-fg-brand-subtle: var(--color-korus-accent-soft);
+    --color-fg-brand: var(--color-korus-accent);
+    --color-fg-brand-strong: var(--color-korus-border);
+    --color-fg-success: var(--color-korus-success);
+    --color-fg-success-strong: var(--color-korus-success-strong);
+    --color-fg-danger: var(--color-korus-danger);
+    --color-fg-danger-strong: var(--color-korus-danger-strong);
+    --color-fg-warning-subtle: var(--color-korus-warning-soft);
+    --color-fg-warning: var(--color-korus-warning);
+    --color-fg-yellow: var(--color-korus-accent);
+    --color-fg-disabled: var(--color-korus-disabled);
+    --color-fg-purple: var(--color-korus-purple);
+    --color-fg-cyan: var(--color-korus-cyan);
+    --color-fg-indigo: var(--color-korus-indigo);
+    --color-fg-pink: var(--color-korus-pink);
+    --color-fg-lime: var(--color-korus-lime);
+
+    /* Background and neutral colors */
+    --color-neutral-primary-soft: var(--color-korus-bg);
+    --color-neutral-primary: var(--color-korus-bg);
+    --color-neutral-primary-medium: var(--color-korus-bg);
+    --color-neutral-primary-strong: var(--color-korus-bg);
+    --color-neutral-secondary-soft: var(--color-korus-surface-2);
+    --color-neutral-secondary: var(--color-korus-surface-2);
+    --color-neutral-secondary-medium: var(--color-korus-surface-2);
+    --color-neutral-secondary-strong: var(--color-korus-surface-2);
+    --color-neutral-secondary-strongest: var(--color-korus-surface-2);
+    --color-neutral-tertiary-soft: var(--color-korus-surface-3);
+    --color-neutral-tertiary: var(--color-korus-surface-3);
+    --color-neutral-tertiary-medium: var(--color-korus-surface-3);
+    --color-neutral-quaternary: var(--color-korus-surface-4);
+    --color-neutral-quaternary-medium: var(--color-korus-surface-4);
+    --color-gray: var(--color-korus-surface-muted);
+
+    /* Brand and status backgrounds */
+    --color-brand-softer: var(--color-korus-accent-softer);
+    --color-brand-soft: var(--color-korus-accent-soft);
+    --color-brand: var(--color-korus-accent);
+    --color-brand-medium: var(--color-korus-accent-medium);
+    --color-brand-strong: var(--color-korus-border);
+    --color-success-soft: var(--color-korus-success-soft);
+    --color-success: var(--color-korus-success);
+    --color-success-medium: var(--color-korus-success-medium);
+    --color-success-strong: var(--color-korus-success-strong);
+    --color-danger-soft: var(--color-korus-danger-soft);
+    --color-danger: var(--color-korus-danger);
+    --color-danger-medium: var(--color-korus-danger-medium);
+    --color-danger-strong: var(--color-korus-danger-strong);
+    --color-warning-soft: var(--color-korus-warning-soft);
+    --color-warning: var(--color-korus-warning);
+    --color-warning-medium: var(--color-korus-warning-medium);
+    --color-warning-strong: var(--color-korus-warning-strong);
+    --color-dark-soft: var(--color-korus-dark-soft);
+    --color-dark: var(--color-korus-dark);
+    --color-dark-strong: var(--color-korus-title);
+    --color-disabled: var(--color-korus-surface-3);
+    --color-dark-subtle: var(--color-korus-dark-soft);
+    --color-dark-backdrop: var(--color-korus-dark-backdrop);
+
+    /* Border colors */
+    --color-buffer: var(--color-korus-bg);
+    --color-buffer-medium: var(--color-korus-bg);
+    --color-buffer-strong: var(--color-korus-bg);
+    --color-muted: var(--color-korus-surface-2);
+    --color-light-subtle: var(--color-korus-surface-3);
+    --color-light: var(--color-korus-surface-3);
+    --color-light-medium: var(--color-korus-surface-3);
+    --color-default-subtle: var(--color-korus-surface-4);
+    --color-default: var(--color-korus-surface-4);
+    --color-default-medium: var(--color-korus-surface-4);
+    --color-default-strong: var(--color-korus-surface-4);
+
+    --default-border-width: 1px;
+    --radius-0: 0px;
+    --radius-xxs: 2px;
+    --radius-xs: 4px;
+    --radius-sm: 6px;
+    --radius: 8px;
+    --radius-base: 12px;
+    --radius-lg: 16px;
+}
+
+@layer base {
+    html {
+        font-family: var(--font-body);
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        font-family: var(--font-heading);
+    }
+}

@@ -14,6 +14,18 @@ La composition repose sur un contraste fort entre des zones sombres et des pages
 
 L'accent jaune Korus doit rester discret mais identifiable : logo, petits reperes, traits, pictogrammes, appels a l'action ou details de navigation. Il ne doit pas dominer la page. La palette percue est principalement noir, blanc, gris, jaune et quelques tons naturels issus des photos.
 
+## Palette chromatique
+
+La palette du site doit rester stable et lisible sur l'ensemble des pages :
+
+- Couleur de fond : `#FFFFFF`
+- Couleur des titres : `#000000`
+- Couleur du texte principal : `#5A5A5A`
+- Couleur de structure : `#867847`
+- Couleur de mise en avant : `#FCC008`
+
+Ces teintes servent de base au systeme visuel global, aux composants recurrents et aux elements de mise en valeur.
+
 ## Structure et composants recurrents
 
 Le header est sombre, horizontal et fin. Le logo Korus est place a gauche, la navigation principale au centre ou legerement a droite, et un appel a l'action discret apparait a droite. L'ensemble doit rester compact, elegant et lisible.
@@ -64,8 +76,10 @@ Attention : plusieurs ecrans JPG montrent encore l'ancienne mention `PROJETS CLI
 
 Les maquettes montrent un duo typographique tres marque :
 
-- les grands titres et accroches utilisent une serif elegante, tres contrastee, proche d'un esprit Didot/Bodoni ;
-- les textes courants, menus, CTA et micro-informations utilisent une sans-serif fine, sobre et tres lisible.
+- les grands titres et accroches utilisent `Playfair Display`, une serif elegante, tres contrastee, proche d'un esprit Didot/Bodoni ;
+- les textes courants, menus, CTA et micro-informations utilisent `Montserrat`, une sans-serif fine, sobre et tres lisible.
+
+Les fichiers proviennent de `public/polices/` et sont integres comme variable fonts, selon les indications des `README.txt` associes. Les variations de graisse doivent donc etre gerees a partir des axes disponibles plutot que par une multiplication de fichiers distincts.
 
 Le rendu doit conserver cette opposition entre editorial et fonctionnel :
 
@@ -75,7 +89,7 @@ Le rendu doit conserver cette opposition entre editorial et fonctionnel :
 - navigation et labels en sans-serif discrète, souvent en capitales fines ou en petite casse selon le contexte ;
 - chiffres, repères et libellés utilitaires dans la même famille sans-serif pour garder la cohérence UI.
 
-Le rythme doit rester calme : grands espacements verticaux, blocs bien separes, peu de surcharge graphique. Si un choix de fonte doit etre formalise dans le code, il faudra verifier le nom exact a partir de la maquette ou du design system disponible ; les sources actuelles ne donnent pas ce nom de facon explicite.
+Le rythme doit rester calme : grands espacements verticaux, blocs bien separes, peu de surcharge graphique.
 
 Eviter les compositions trop marketing, les cartes trop arrondies, les effets de gradient decoratifs ou les blocs trop colores. Le site doit rester proche de l'univers imprimeur : precis, tactile, technique et haut de gamme.
 
@@ -111,6 +125,8 @@ Le mobile ne doit pas etre une version degradee, mais une relecture plus vertica
 ## Composants Twig
 
 Le site doit reposer sur un socle de composants Twig reutilisables pour eviter les variantes isolees par page et garder une cohérence editoriale.
+
+Flowbite complete cette base pour les composants UI interactifs et les patterns Tailwind standards. Pour les references locales, utiliser le skill `.agents/skills/flowbite`.
 
 ### Socle attendu
 
