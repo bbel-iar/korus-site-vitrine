@@ -8,7 +8,7 @@ public function index()
 {
     $twig = service('twig');
 
-    return $twig->render('home.twig', [
+    return $twig->render('page/home.twig', [
         'title' => 'Accueil',
     ]);
 }

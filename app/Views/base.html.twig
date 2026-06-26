@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="{% block meta_description %}{{ meta_description|default('Korus Imprimerie, imprimerie traditionnelle à Bordeaux.') }}{% endblock %}">
+    <title>{% block title %}{{ title|default('Korus Imprimerie') }}{% endblock %}</title>
+    <link rel="icon" href="/favicon.ico">
+    <link rel="stylesheet" href="/css/output.css">
+    {% block stylesheets %}{% endblock %}
+</head>
+<body class="{% block body_class %}bg-white text-neutral-900 antialiased{% endblock %}">
+    {% block header %}{% endblock %}
+
+    <main id="main-content" class="{% block main_class %}min-h-screen{% endblock %}">
+        {% block content %}{% endblock %}
+    </main>
+
+    {% block footer %}{% endblock %}
+
+    {% block javascripts %}
+        <script src="../path/to/flowbite/dist/flowbite.min.js"></script>
+    {% endblock %}
+</body>
+</html>
