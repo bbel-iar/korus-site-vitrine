@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+  <testsuite name="/home/bbel/Documents/Code/new_site_korus/phpunit.dist.xml" tests="1" assertions="5" errors="0" failures="0" skipped="0" time="0.055445">
+    <testsuite name="App" tests="1" assertions="5" errors="0" failures="0" skipped="0" time="0.055445">
+      <testsuite name="Tests\Feature\HomePageTest" file="/home/bbel/Documents/Code/new_site_korus/tests/Feature/HomePageTest.php" tests="1" assertions="5" errors="0" failures="0" skipped="0" time="0.055445">
+        <testcase name="testRendersHomePageWithHeader" file="/home/bbel/Documents/Code/new_site_korus/tests/Feature/HomePageTest.php" line="14" class="Tests\Feature\HomePageTest" classname="Tests.Feature.HomePageTest" assertions="5" time="0.055445"/>
+      </testsuite>
+    </testsuite>
+  </testsuite>
+</testsuites>

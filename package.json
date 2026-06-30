@@ -1,7 +1,30 @@
 {
+  "name": "site_korus",
+  "version": "1.0.0",
+  "description": "Site vitrine de l'entreprise Korus",
+  "homepage": "https://github.com/bbel-iar/korus-site-vitrine#readme",
+  "bugs": {
+    "url": "https://github.com/bbel-iar/korus-site-vitrine/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bbel-iar/korus-site-vitrine.git"
+  },
+  "license": "ISC",
+  "author": "Bilal Belmehdi",
+  "type": "commonjs",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs",
+    "test": "tests"
+  },
+  "scripts": {
+    "dev": "npx @tailwindcss/cli -i ./public/css/input.css -o ./public/css/styles.css --watch"
+  },
   "dependencies": {
     "@tailwindcss/cli": "^4.3.1",
     "flowbite": "^4.0.2",
     "tailwindcss": "^4.3.1"
-  }
+  },
+  "devDependencies": {}
 }

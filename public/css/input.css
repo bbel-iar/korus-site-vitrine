@@ -48,6 +48,7 @@
     --color-korus-bg: #FFFFFF;
     --color-korus-text: #5A5A5A;
     --color-korus-title: #000000;
+    --color-korus-light: #EBEBEB;
     --color-korus-border: #867847;
     --color-korus-accent: #FCC008;
     --color-korus-accent-soft: #FFF0B5;
@@ -97,6 +98,7 @@
     --color-body: var(--color-korus-text);
     --color-body-subtle: var(--color-korus-text);
     --color-heading: var(--color-korus-title);
+    --color-fg-light: var(--color-korus-light);
     --color-fg-brand-subtle: var(--color-korus-accent-soft);
     --color-fg-brand: var(--color-korus-accent);
     --color-fg-brand-strong: var(--color-korus-border);

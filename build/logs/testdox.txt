@@ -1,0 +1,3 @@
+Home Page (Tests\Feature\HomePage)
+ [x] Renders home page with header
+

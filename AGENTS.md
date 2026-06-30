@@ -69,6 +69,13 @@ PHPUnit 10 est configuré dans `phpunit.dist.xml` ; il parcourt `tests/` et incl
 
 L’historique actuel est minimal et utilise de courts résumés à l’impératif, par exemple `lib (twig) add twig on the project`. Gardez les commits ciblés et décrivez le changement visible par l’utilisateur ou la mise à jour de dépendance. Les pull requests doivent inclure une brève description, les tests effectués, les issues liées le cas échéant, ainsi que des captures d’écran pour les changements visuels apportés aux modèles Twig ou aux ressources publiques.
 
+## Consignes de code
+
+- Ne pas utiliser de balises ni de classes `dark:` dans ce projet.
+- Si du code proposé contient `dark:`, le nettoyer systématiquement avant intégration.
+- Ne pas ajouter de classes avec des valeurs en dur comme `text-[#EBEBEB]` ou `bg-[#2C2C2C]`; utiliser les variables définies dans le thème.
+- Ne pas ajouter de tests automatisés pour ce projet.
+
 ## Conseils de sécurité et de configuration
 
 Ne committez pas les secrets locaux `.env` ni les données générées à l’exécution depuis `writable/`. Conservez `public/index.php` comme seul contrôleur frontal et évitez d’exposer les fichiers situés à la racine du projet via le serveur web.

@@ -5,6 +5,7 @@ namespace Config;
 use CodeIgniter\Config\BaseService;
 use Twig\Environment;
 use Twig\Loader\FilesystemLoader;
+use Twig\TwigFunction;
 
 /**
  * Services Configuration file.
@@ -39,11 +40,16 @@ class Services extends BaseService
         }
 
         $loader = new FilesystemLoader(APPPATH . 'Views');
-
-        return new Environment($loader, [
+        $twig = new Environment($loader, [
             'cache' => WRITEPATH . 'cache/twig',
             'debug' => ENVIRONMENT !== 'production',
             'autoescape' => 'html',
         ]);
+
+        $twig->addGlobal('navLinksHeader', getNavLinkHeader());
+        $twig->addGlobal('navLinksFooter', getNavLinkFooter());
+        $twig->addFunction(new TwigFunction('base_url', 'base_url'));
+
+        return $twig;
     }
 }

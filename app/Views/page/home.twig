@@ -1,11 +1,12 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{{title}}</title>
-</head>
-<body>
-    Bouh
-</body>
-</html>
+{% extends 'base.html.twig' %}
+
+{% block title %}{{ title }}{% endblock %}
+{% block meta_description %}{{ meta_description|default("Korus Imprimerie, votre imprimerie traditionnelle à Bordeaux.") }}{% endblock %}
+
+{% block header %}
+    {{ include('components/layout/header.twig') }}
+{% endblock %}
+
+{% block main_class %}hidden{% endblock %}
+
+{% block content %}{% endblock %}
