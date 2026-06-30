@@ -935,6 +935,9 @@
       max-width: 96rem;
     }
   }
+  .mx-6 {
+    margin-inline: calc(var(--spacing) * 6);
+  }
   .mx-auto {
     margin-inline: auto;
   }
@@ -1600,6 +1603,9 @@
   .items-start {
     align-items: flex-start;
   }
+  .justify-around {
+    justify-content: space-around;
+  }
   .justify-between {
     justify-content: space-between;
   }
@@ -1632,6 +1638,9 @@
   }
   .gap-10 {
     gap: calc(var(--spacing) * 10);
+  }
+  .gap-12 {
+    gap: calc(var(--spacing) * 12);
   }
   .space-y-2 {
     :where(& > :not(:last-child)) {
@@ -1675,6 +1684,9 @@
   }
   .rounded-base {
     border-radius: var(--radius-base);
+  }
+  .rounded-full {
+    border-radius: calc(infinity * 1px);
   }
   .rounded-lg {
     border-radius: var(--radius-lg);
@@ -1801,6 +1813,9 @@
   .border-transparent {
     border-color: transparent;
   }
+  .border-white {
+    border-color: var(--color-white);
+  }
   .apexcharts-active {
     .apexcharts-canvas .apexcharts-tooltip-series-group& .apexcharts-tooltip-y-group {
       padding: 0 !important;
@@ -1855,6 +1870,9 @@
   }
   .bg-dark-soft {
     background-color: var(--color-dark-soft);
+  }
+  .bg-fg-light {
+    background-color: var(--color-fg-light);
   }
   .bg-gray-100 {
     background-color: var(--color-gray-100);
@@ -2019,6 +2037,15 @@
   }
   .px-5 {
     padding-inline: calc(var(--spacing) * 5);
+  }
+  .px-6 {
+    padding-inline: calc(var(--spacing) * 6);
+  }
+  .px-12 {
+    padding-inline: calc(var(--spacing) * 12);
+  }
+  .px-20 {
+    padding-inline: calc(var(--spacing) * 20);
   }
   .py-2 {
     padding-block: calc(var(--spacing) * 2);
@@ -2203,6 +2230,9 @@
   .text-body {
     color: var(--color-body);
   }
+  .text-dark-soft {
+    color: var(--color-dark-soft);
+  }
   .text-fg-brand {
     color: var(--color-fg-brand);
   }
@@ -2229,6 +2259,9 @@
   }
   .text-heading {
     color: var(--color-heading);
+  }
+  .text-transparent {
+    color: transparent;
   }
   .text-white {
     color: var(--color-white);
@@ -2310,6 +2343,13 @@
       }
     }
   }
+  .hover\:border-dark-soft {
+    &:hover {
+      @media (hover: hover) {
+        border-color: var(--color-dark-soft);
+      }
+    }
+  }
   .hover\:border-default {
     &:hover {
       @media (hover: hover) {
@@ -2352,6 +2392,13 @@
     &:hover {
       @media (hover: hover) {
         background-color: var(--color-brand-strong);
+      }
+    }
+  }
+  .hover\:bg-dark-soft {
+    &:hover {
+      @media (hover: hover) {
+        background-color: var(--color-dark-soft);
       }
     }
   }
@@ -2564,6 +2611,11 @@
       justify-content: center;
     }
   }
+  .md\:gap-0 {
+    @media (width >= 48rem) {
+      gap: 0;
+    }
+  }
   .md\:gap-6 {
     @media (width >= 48rem) {
       gap: calc(var(--spacing) * 6);
@@ -2615,6 +2667,31 @@
       padding-inline: 0;
     }
   }
+  .md\:px-10 {
+    @media (width >= 48rem) {
+      padding-inline: calc(var(--spacing) * 10);
+    }
+  }
+  .md\:px-12 {
+    @media (width >= 48rem) {
+      padding-inline: calc(var(--spacing) * 12);
+    }
+  }
+  .md\:px-20 {
+    @media (width >= 48rem) {
+      padding-inline: calc(var(--spacing) * 20);
+    }
+  }
+  .md\:px-30 {
+    @media (width >= 48rem) {
+      padding-inline: calc(var(--spacing) * 30);
+    }
+  }
+  .md\:px-40 {
+    @media (width >= 48rem) {
+      padding-inline: calc(var(--spacing) * 40);
+    }
+  }
   .md\:py-0 {
     @media (width >= 48rem) {
       padding-block: 0;
@@ -2633,6 +2710,16 @@
   .lg\:gap-6 {
     @media (width >= 64rem) {
       gap: calc(var(--spacing) * 6);
+    }
+  }
+  .lg\:px-20 {
+    @media (width >= 64rem) {
+      padding-inline: calc(var(--spacing) * 20);
+    }
+  }
+  .lg\:px-40 {
+    @media (width >= 64rem) {
+      padding-inline: calc(var(--spacing) * 40);
     }
   }
   .rtl\:rotate-180 {
