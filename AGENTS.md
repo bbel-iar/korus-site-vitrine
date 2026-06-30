@@ -75,6 +75,9 @@ L’historique actuel est minimal et utilise de courts résumés à l’impérat
 - Si du code proposé contient `dark:`, le nettoyer systématiquement avant intégration.
 - Ne pas ajouter de classes avec des valeurs en dur comme `text-[#EBEBEB]` ou `bg-[#2C2C2C]`; utiliser les variables définies dans le thème.
 - Ne pas ajouter de tests automatisés pour ce projet.
+- Ne pas écrire de JavaScript inline dans le HTML ou les templates Twig.
+- Ne pas écrire de CSS inline dans le HTML ou les templates Twig.
+- Une feature JavaScript = un fichier dédié dans `public/js/`.
 
 ## Conseils de sécurité et de configuration
 

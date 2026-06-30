@@ -1,10 +1,13 @@
 {% extends 'base.html.twig' %}
+{% set header_background = 'transparent' %}
 
 {% block title %}{{ title }}{% endblock %}
 {% block meta_description %}{{ meta_description|default("Korus Imprimerie, votre imprimerie traditionnelle à Bordeaux.") }}{% endblock %}
 
 {% block header %}
-    {{ include('components/layout/header.twig') }}
+    {{ include('components/layout/header.twig', {
+        background: header_background
+    }) }}
 {% endblock %}
 
 {% block main_class %}min-h-screen{% endblock %}
@@ -20,3 +23,4 @@
         cta_href: '#'
     }) }}
 {% endblock %}
+

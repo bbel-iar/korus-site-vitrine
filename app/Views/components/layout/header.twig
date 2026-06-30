@@ -1,8 +1,14 @@
 {% set headerLinks = navLinksHeader|default([]) %}
 {% set ctaLink = headerLinks|length > 0 ? headerLinks|last : {'label': 'Contact / devis', 'href': '/contact-devis'} %}
 {% set navLinks = headerLinks|length > 0 ? headerLinks|slice(0, headerLinks|length - 1) : [] %}
+{% set headerBackground = background|default('black') %}
+{% set headerBackground = headerBackground in ['black', 'transparent'] ? headerBackground : 'black' %}
+{% set headerBaseClass = 'fixed inset-x-0 top-0 z-50 border-b text-fg-light transition-colors duration-200' %}
+{% set headerBlackClass = 'border-dark-soft bg-dark' %}
+{% set headerTransparentClass = 'border-transparent bg-transparent' %}
+{% set headerClass = headerBackground == 'transparent' ? headerBaseClass ~ ' ' ~ headerTransparentClass : headerBaseClass ~ ' ' ~ headerBlackClass %}
 
-<header id="site-header" class="fixed inset-x-0 top-0 z-50 border-b border-dark-soft bg-dark text-fg-light">
+<header id="site-header" data-header-background="{{ headerBackground }}" data-header-black-class="{{ headerBlackClass }}" data-header-transparent-class="{{ headerTransparentClass }}" class="{{ headerClass }}">
 	<nav>
 		<div class="mx-auto flex max-w-7xl flex-wrap items-center justify-between gap-2 {{ layout_horizontal_class|default('lg:px-20 md:px-10 px-2') }} py-4">
 			<a href="/" class="flex items-center gap-3">
@@ -32,3 +38,9 @@
 		</div>
 	</nav>
 </header>
+
+{% block javascripts %}
+    {% if headerBackground == 'transparent' %}
+        <script src="{{ base_url('js/header-scroll-background.js') }}" defer></script>
+    {% endif %}
+{% endblock %}
