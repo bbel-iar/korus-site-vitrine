@@ -1,0 +1,35 @@
+{% set heroBackgroundImage = background_image|default('') %}
+{% set heroTitle = title|default('') %}
+{% set heroParagraph = paragraph|default('') %}
+{% set heroCtaLabel = cta_label|default('') %}
+{% set heroCtaHref = cta_href|default('#') %}
+
+<section class="relative isolate flex h-100vh items-end overflow-hidden bg-dark text-fg-light">
+	{% if heroBackgroundImage %}
+		<img src="{{ heroBackgroundImage }}" alt="Banner" class="absolute inset-0 h-full w-full object-cover object-center">
+	{% endif %}
+
+	<div class="relative z-10 mx-auto flex w-full max-w-7xl px-3 pb-16 pt-32 md:pb-20 md:pt-36 lg:pb-24 {{layout_horizontal_class}}">
+		<div class="flex max-w-3xl flex-col gap-6">
+			{% if heroTitle %}
+				<h1 class="font-heading text-4xl leading-tight text-fg-light sm:text-5xl lg:text-7xl">
+					{{ heroTitle }}
+				</h1>
+			{% endif %}
+
+			{% if heroParagraph %}
+				<p class="max-w-2xl text-base leading-7 text-fg-light/90 sm:text-lg sm:leading-8">
+					{{ heroParagraph }}
+				</p>
+			{% endif %}
+
+			{% if heroCtaLabel %}
+				<div class="pt-2">
+					<a href="{{ heroCtaHref }}" class="inline-flex items-center justify-center border border-brand-strong px-6 py-3 text-sm font-medium uppercase tracking-[0.18em] text-fg-light transition-colors duration-200 hover:border-brand hover:text-fg-brand focus:outline-none focus:ring-2 focus:ring-brand-strong/40">
+						{{ heroCtaLabel }}
+					</a>
+				</div>
+			{% endif %}
+		</div>
+	</div>
+</section>
