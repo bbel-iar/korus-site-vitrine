@@ -3,7 +3,7 @@
 <footer id="site-footer" class="border-t border-dark-soft bg-dark text-fg-light mt-12">
 	<div class="mx-auto max-w-7xl {{ layout_horizontal_class|default('lg:px-20 md:px-10 px-2') }} py-12">
 		<div class="flex flex-col gap-12 md:gap-0 md:flex-row md:items-center md:justify-between">
-			<div class="flex min-h-full flex-col justify-center text-center">
+			<div class="order-2 flex min-h-full flex-col justify-center text-center md:order-none">
 				<h4 class="text-lg font-semibold font-body uppercase tracking-wide text-fg-light">
 					Adresse
 				</h4>
@@ -13,12 +13,12 @@
 				</div>
 			</div>
 
-			<div class="flex min-h-full flex-col items-center justify-center text-center">
+			<div class="order-1 flex min-h-full flex-col items-center justify-center text-center md:order-0">
 				<a href="/" class="inline-flex items-center justify-center">
 					<img src="{{ base_url('images/Logo.png') }}" class="h-12 w-auto" alt="Korus Imprimerie">
 				</a>
 
-				<div class="mt-6 w-full flex items-center justify-around gap-3 px-2">
+				<div class="mt-6 w-full flex items-center justify-center md:justify-around gap-6 px-2">
 
 					<a href="#" target="_blank" rel="noopener noreferrer" class="inline-flex h-8 w-8 items-center justify-center rounded-full border border-white bg-white text-dark-soft transition-colors duration-200 hover:border-dark-soft hover:bg-dark-soft hover:text-fg-light focus:outline-none focus:ring-4 focus:ring-fg-light/20" aria-label="Réseau social 1">
 						<svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewbox="0 0 24 24">
@@ -45,7 +45,7 @@
 			</div>
 
 
-			<div class="flex min-h-full flex-col justify-center text-center">
+			<div class="order-3 flex min-h-full flex-col justify-center text-center md:order-none">
 				<h4 class="text-lg font-semibold font-body uppercase tracking-wide text-fg-light">
 					Nos sites
 				</h4>
